@@ -1,0 +1,8 @@
+version: "3"
+services:
+  mytensorflow:
+    container_name: mytensorflow
+    image: mytensorflow:latest
+    volumes:
+      - .:/development
+      - ./notebooks:/notebooks/custom
