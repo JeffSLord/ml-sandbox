@@ -27,5 +27,4 @@ sudo docker run -p 8500:8500 -p 8501:8501 \
 
 Can test `NumModel` which expects a single number input and returns a single number output.
 
-curl -d '{"instances": 1}' \
- -X POST http://localhost:8501/models/NumModel:predict
+`curl -d '{"instances": 1}' -X POST http://localhost:8501/models/NumModel:predict`
