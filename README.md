@@ -8,7 +8,7 @@
 
 This configuration only works for my machine. If you want to use this you have to adjust configuration to fit your computer.
 
-`docker run --rm -it -p 6006:6006/tcp -p 8888:8888/tcp --mount type=bind,source=C:/Users/i849438/Development/git/repos/ml-sandbox/notebooks,target=/notebooks/custom --mount type=bind,source=C:/Users/i849438/Development/git/repos/ml-sandbox,target=/development --mount type=bind,source="C:/Users/i849438/OneDrive - SAP SE\Data",target=/data mytensorflow`
+`docker run --rm -it -p 6006:6006/tcp -p 8888:8888/tcp --mount type=bind,source="C:/Users/i849438/Development/git/repos/ml-sandbox/notebooks",target=/notebooks/custom --mount type=bind,source="C:/Users/i849438/Development/git/repos/ml-sandbox",target=/development --mount type=bind,source="C:/Users/i849438/OneDrive - SAP SE\Data",target=/data mytensorflow`
 
 ## TF Serving Docker
 
