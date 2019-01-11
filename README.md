@@ -53,7 +53,7 @@ Example of usage...
 
 Train
 
-```python
+```bash
 python retrain.py --image_dir="\Users\i849438\OneDrive - SAP SE\Data\ml_data\images\oilwater" --tfhub_module=https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/classification/2 --random_crop=10 --random_scale=10 --random_brightness=10 --flip_left_right --saved_model_dir=models\oilwater --how_many_training_steps=50
 ```
 
@@ -61,7 +61,7 @@ The training outputs to the /tmp/output_graph.pb, along with the /tmp/output_lab
 
 Inference
 
-```python
+```bash
 python label_image.py --graph=models\pb\oilwater_mobilenet\output_graph.pb --labels=models\pb\oilwater_mobilenet\output_labels.txt --input_height=224 --input_width=224 --input_layer=Placeholder --output_layer=final_result --image=images\oil.png
 ```
 
